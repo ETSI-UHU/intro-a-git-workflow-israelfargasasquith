@@ -19,7 +19,7 @@ public class Calculadora {
 
         System.out.print("Ingrese el segundo número: ");
         num2 = scanner.nextDouble();
-        num2 = scanner.nextDouble();
+        //askhdgasdgashdasdask
         switch (operador) {
             case '+':
                 resultado = num1 + num2;
