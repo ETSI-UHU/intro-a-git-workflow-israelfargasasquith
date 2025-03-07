@@ -19,12 +19,12 @@ public class Calculadora {
 
         System.out.print("Ingrese el segundo número: ");
         num2 = scanner.nextDouble();
-
+        num2 = scanner.nextDouble();
         switch (operador) {
             case '+':
-                resultado = num1 + num2;
-                System.out.println("Resultado: " + resultado);
+            	 sumar(num1,num2);
                 break;
+                
             case '-':
                 resultado = num1 - num2;
                 System.out.println("Resultado: " + resultado);
@@ -51,5 +51,10 @@ public class Calculadora {
 		} else {
 		    System.out.println("Error: División por cero no permitida.");
 		}
+	public static void sumar(double num1, double num2) {
+		var resultado = num1 + num2;
+		System.out.println("Resultado: " + resultado);
 	}
 }
+    
+   
