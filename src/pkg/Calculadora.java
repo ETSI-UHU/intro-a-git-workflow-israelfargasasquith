@@ -19,12 +19,13 @@ public class Calculadora {
 
         System.out.print("Ingrese el segundo número: ");
         num2 = scanner.nextDouble();
-
+        
         switch (operador) {
             case '+':
                 resultado = num1 + num2;
                 System.out.println("Resultado: " + resultado);
                 break;
+                
             case '-':
                 resultado = num1 - num2;
                 System.out.println("Resultado: " + resultado);
