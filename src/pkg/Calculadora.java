@@ -6,7 +6,7 @@ public class Calculadora {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        //add
         double num1, num2, resultado;
         char operador;
 
