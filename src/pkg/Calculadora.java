@@ -19,7 +19,6 @@ public class Calculadora {
 
         System.out.print("Ingrese el segundo número: ");
         num2 = scanner.nextDouble();
-        //askhdgasdgashdasdask
         switch (operador) {
             case '+':
                 resultado = num1 + num2;
@@ -48,4 +47,10 @@ public class Calculadora {
 
         scanner.close();
     }
+    
+    private static void multiplicar(double num1, double num2) {
+		double resultado;
+		resultado = num1 * num2;
+		System.out.println("Resultado: " + resultado);
+	}
 }
