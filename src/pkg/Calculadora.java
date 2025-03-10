@@ -21,8 +21,7 @@ public class Calculadora {
         num2 = scanner.nextDouble();
         switch (operador) {
             case '+':
-                resultado = num1 + num2;
-                System.out.println("Resultado: " + resultado);
+            	 sumar(num1,num2);
                 break;
                 
             case '-':
@@ -48,9 +47,16 @@ public class Calculadora {
         scanner.close();
     }
     
+//mejora/2-factorizar-operacion-de-multiplicacion
     private static void multiplicar(double num1, double num2) {
 		double resultado;
 		resultado = num1 * num2;
 		System.out.println("Resultado: " + resultado);
 	}
+
+    public static void sumar(double num1, double num2) {
+    	var resultado = num1 + num2;
+        System.out.println("Resultado: " + resultado);
+    }
+master
 }
