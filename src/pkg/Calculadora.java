@@ -34,12 +34,7 @@ public class Calculadora {
                 System.out.println("Resultado: " + resultado);
                 break;
             case '/':
-                if (num2 != 0) {
-                    resultado = num1 / num2;
-                    System.out.println("Resultado: " + resultado);
-                } else {
-                    System.out.println("Error: División por cero no permitida.");
-                }
+			Division(num1, num2);
                 break;
             default:
                 System.out.println("Operador no válido.");
@@ -47,9 +42,19 @@ public class Calculadora {
 
         scanner.close();
     }
-    
-    public static void sumar(double num1, double num2) {
-    	var resultado = num1 + num2;
-        System.out.println("Resultado: " + resultado);
-    }
+
+	public static void Division(double num1, double num2) {
+		double resultado;
+		if (num2 != 0) {
+		    resultado = num1 / num2;
+		    System.out.println("Resultado: " + resultado);
+		} else {
+		    System.out.println("Error: División por cero no permitida.");
+		}
+	public static void sumar(double num1, double num2) {
+		var resultado = num1 + num2;
+		System.out.println("Resultado: " + resultado);
+	}
 }
+    
+   
