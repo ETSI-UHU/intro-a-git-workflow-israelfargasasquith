@@ -19,19 +19,19 @@ public class Calculadora {
 
         System.out.print("Ingrese el segundo número: ");
         num2 = scanner.nextDouble();
-
+        num2 = scanner.nextDouble();
         switch (operador) {
             case '+':
-                resultado = num1 + num2;
-                System.out.println("Resultado: " + resultado);
+            	 sumar(num1,num2);
                 break;
+                
             case '-':
 			operacionResta(num1, num2);
                 break;
             case '*':
                 resultado = num1 * num2;
                 System.out.println("Resultado: " + resultado);
-                break;
+                break; 
             case '/':
                 if (num2 != 0) {
                     resultado = num1 / num2;
@@ -47,9 +47,18 @@ public class Calculadora {
         scanner.close();
     }
 
-	public static void operacionResta(double num1, double num2) {
+
+	
+    
+    public static void sumar(double num1, double num2) {
+    	var resultado = num1 + num2;
+        System.out.println("Resultado: " + resultado);
+    }
+
+public static void operacionResta(double num1, double num2) {
 		double resultado;
 		resultado = num1 - num2;
 		System.out.println("Resultado: " + resultado);
-	}
+	}  
+  
 }
