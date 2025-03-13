@@ -25,20 +25,14 @@ public class Calculadora {
                 break;
                 
             case '-':
-                resultado = num1 - num2;
-                System.out.println("Resultado: " + resultado);
+			operacionResta(num1, num2);
                 break;
             case '*':
                 resultado = num1 * num2;
                 System.out.println("Resultado: " + resultado);
-                break;
+                break; 
             case '/':
-                if (num2 != 0) {
-                    resultado = num1 / num2;
-                    System.out.println("Resultado: " + resultado);
-                } else {
-                    System.out.println("Error: División por cero no permitida.");
-                }
+			Division(num1, num2);
                 break;
             default:
                 System.out.println("Operador no válido.");
@@ -46,6 +40,10 @@ public class Calculadora {
 
         scanner.close();
     }
+
+
+
+	
     
 //mejora/2-factorizar-operacion-de-multiplicacion
     private static void multiplicar(double num1, double num2) {
@@ -58,5 +56,22 @@ public class Calculadora {
     	var resultado = num1 + num2;
         System.out.println("Resultado: " + resultado);
     }
-master
+
+public static void operacionResta(double num1, double num2) {
+		double resultado;
+		resultado = num1 - num2;
+		System.out.println("Resultado: " + resultado);
+	}  
+  
+
+	public static void Division(double num1, double num2) {
+		double resultado;
+		if (num2 != 0) {
+		    resultado = num1 / num2;
+		    System.out.println("Resultado: " + resultado);
+		} else {
+		    System.out.println("Error: División por cero no permitida.");
+		}
 }
+    
+   
