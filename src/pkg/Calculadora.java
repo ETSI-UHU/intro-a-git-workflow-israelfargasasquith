@@ -26,13 +26,12 @@ public class Calculadora {
                 break;
                 
             case '-':
-                resultado = num1 - num2;
-                System.out.println("Resultado: " + resultado);
+			operacionResta(num1, num2);
                 break;
             case '*':
                 resultado = num1 * num2;
                 System.out.println("Resultado: " + resultado);
-                break;
+                break; 
             case '/':
 			Division(num1, num2);
                 break;
@@ -43,6 +42,22 @@ public class Calculadora {
         scanner.close();
     }
 
+
+
+	
+    
+    public static void sumar(double num1, double num2) {
+    	var resultado = num1 + num2;
+        System.out.println("Resultado: " + resultado);
+    }
+
+public static void operacionResta(double num1, double num2) {
+		double resultado;
+		resultado = num1 - num2;
+		System.out.println("Resultado: " + resultado);
+	}  
+  
+
 	public static void Division(double num1, double num2) {
 		double resultado;
 		if (num2 != 0) {
@@ -51,7 +66,10 @@ public class Calculadora {
 		} else {
 		    System.out.println("Error: División por cero no permitida.");
 		}
-	public static void sumar(double num1, double num2) {
+	
+  
+  
+  public static void sumar(double num1, double num2) {
 		var resultado = num1 + num2;
 		System.out.println("Resultado: " + resultado);
 	}
