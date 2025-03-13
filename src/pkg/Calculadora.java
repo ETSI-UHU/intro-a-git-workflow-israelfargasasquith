@@ -68,11 +68,6 @@ public static void operacionResta(double num1, double num2) {
 		}
 	
   
-  
-  public static void sumar(double num1, double num2) {
-		var resultado = num1 + num2;
-		System.out.println("Resultado: " + resultado);
-	}
 }
     
    
